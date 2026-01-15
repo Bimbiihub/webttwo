@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="general.css">
+        <link rel="stylesheet" href="projects.css">
+        <title>KKIYD</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="topbar">
+                <img class="waicon" src="images/apple.png">
+                <p class="phone-number">+90 (554)-115-4115</p>
+                <img class="tblogo" src="images/transpglb5.png">
+                <img class="mailicon" src="images/mail.png">
+                <p class="e-mail-address">info@kkiyd.org</p>
+            </div>
+            <div class="header-mid-section">
+                <p class="header-mid-section-kkiyd">
+                    Küresel Kalkınma ve İnsani Yardım
+        Derneği
+                </p>
+                <p class="header-mid-section-uwt">
+                    Ümmet Yardım Vakfı (İngiltere) İle
+        Ortaklaşa...
+                </p>
+            </div>
+            <nav class="navbar">
+                <a href="index.html">
+                    <img src="images/kkiyd-logo.png" alt="Logo" class="kkiyd-logo">
+                </a>
+                <div class="nav-container">
+                    <ul class="nav-links">
+                        <li>
+                            <a href="index.html">Anasayfa</a>
+                        </li>
+                        <li>
+                            <a href="about.html">Hakkimizda</a>
+                        </li>
+                        <li><a href="announcements.html">Duyurular</a></li>
+                        <li>
+                            <a href="ourpartners.html">Ortaklarimiz</a>
+                        </li>
+                        <li>
+                            <a href="projects.html">Projelerimiz</a>
+                        </li>
+                        <li>
+                            <a href="blog.html">Blog</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Bize Ulasin</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="https://uwt.org">
+                    <img src="images/uwt logo narrower.png" alt="Logo" class="uwt-logo">
+                </a>
+                <button class="menu-toggle" aria-label="Menüyü Aç/Kapat">
+                    ☰
+                </button>
+            </nav>
+        </header>
+        <div class="filter-header">
+            <p class="filter-title">Sahadaki Etkimiz</p>
+        </div>
+        <div class="mid-section">
+            <div class="filter-bar">
+                <button data-filter="all" class="filter-btn">Tüm Projeler</button>
+                <button data-filter="urgent" class="filter-btn">Öncelikli</button>
+                <button data-filter="water" class="filter-btn">Suya Erişim</button>
+                <button data-filter="health" class="filter-btn">Sağlık</button>
+                <button data-filter="education" class="filter-btn">Eğitim</button>
+                <button data-filter="shelter" class="filter-btn">Barınma</button>
+                <button data-filter="food" class="filter-btn">Gıda</button>
+                <button data-filter="cash" class="filter-btn">Maddi Destek</button>
+            </div>
+            <!-- === PROJECTS CARDS START === -->
+            <div class="card-grid-container">
+                <div class="card-grid">
+                    <div class="card" data-category="food">
+                        <div>
+                            <img src="images/projects/FOODBASKETS.JPG" alt="Project Image">
+                            <div class="card-title">Gıda Sepeti Yardımı</div>
+                            <div class="card-description">
+                                İhtiyaç sahibi ailelere temel gıda malzemelerinden oluşan gıda
+              sepetleri ulaştırıyoruz. Bu sepetlerde un, yağ, pirinç,
+              mercimek,
+              makarna, şeker gibi temel ihtiyaçlar yer alıyor. Düzenli olarak
+              yürüttüğümüz bu dağıtımlarla ailelerin sofralarına destek olmayı
+              hedefliyoruz.
+                            </div>
+                        </div>
+                        <div>
+                            <button class="expand-btn" onclick="toggleVideo(this)">
+                                Videoyu
+              İzle
+                            </button>
+                            <div class="video-container">
+                                <iframe
+                                    width="560"
+                                    height="315"
+                                    src="https://www.youtube.com/embed/W6i6popNBnU?si=Pfs18Vu6kdNT8EG2"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-category="food">
+                        <div>
+                            <img src="images/projects/BABYMILK.JPG" alt="Project Image">
+                            <div class="card-title">Bebek Sütü Yardımı</div>
+                            <div class="card-description">
+                                Savaş ve yoksulluk nedeniyle mama ve süt erişimi zorlaşan
+              ailelere
+              bebek sütü desteği sağlıyoruz. Bu proje ile bebeklerin sağlıklı
+              beslenmesini ve gelişimini desteklemeyi amaçlıyoruz.
+              Destekleriniz
+              sayesinde minik kalplere umut oluyoruz.
+                            </div>
+                        </div>
+                        <div>
+                            <button class="expand-btn" onclick="toggleVideo(this)">
+                                Videoyu
+              İzle
+                            </button>
+                            <div class="video-container">
+                                <iframe
+                                    width="560"
+                                    height="315"
+                                    src="https://www.youtube.com/embed/Ve3xCeE2UrI?si=tDs8B4G4fe43SfND"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-category="cash">
+                        <div>
+                            <img src="images/projects/EARTHQUAKE.JPG" alt="Project Image">
+                            <div class="card-title">Deprem Mağdurlarına Nakit Desteği</div>
+                            <div class="card-description">
+                                Depremden etkilenen ailelerin acil ihtiyaçlarını
+              karşılayabilmesi
+              için nakit yardımı sağlıyoruz. Bu destek, barınma, gıda, giysi
+              ve
+              ilaç gibi temel ihtiyaçların temininde büyük rol oynuyor.
+              Dayanışmanızla, afetzedelerin hayatlarına yeniden umut oluyoruz.
+                            </div>
+                        </div>
+                        <div>
+                            <button class="expand-btn" onclick="toggleVideo(this)">
+                                Videoyu
+              İzle
+                            </button>
+                            <div class="video-container">
+                                <iframe
+                                    width="560"
+                                    height="315"
+                                    src="https://www.youtube.com/embed/sd2g4v_Lr50?si=E0oF40fN3zQs6bjf"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-category="education">
+                        <div>
+                            <img src="images/projects/QURAN.jpg" alt="Kur'an Kursu">
+                            <div class="card-title">Kur'an Kurslarımız</div>
+                            <div class="card-description">
+                                Çocukların ve gençlerin dini bilgilerini güvenli ve uygun
+              ortamlarda öğrenebilmeleri için Kur’an kursları açıyoruz. Bu
+              kurslarda hem Kur’an-ı Kerim eğitimi veriliyor hem de ahlaki ve
+              manevi gelişimleri destekleniyor. Geleceğimizi inşa eden
+              nesillerin sağlam temellerle yetişmesine katkı sağlıyoruz.
+                            </div>
+                        </div>
+                        <div>
+                            <button class="expand-btn" onclick="toggleVideo(this)">
+                                Videoyu
+              İzle
+                            </button>
+                            <div class="video-container"></div>
+                        </div>
+                    </div>
+                    <div class="card" data-category="food">
+                        <div>
+                            <img src="images/projects/WALIMA.JPG" alt="pişmiş-yemek">
+                            <div class="card-title">Pişmiş Yemek Yardımlarımız</div>
+                            <div class="card-description">
+                                Bağışladığınız adak kurbanlarla hazırlanan pişmiş yemekler,
+              savaş
+              ve yoksulluk ortamında yaşayan çocuklara sıcak bir öğün,
+              yüzlerinde tebessüm oluyor. Gönüllü aşçılarımızın özenle
+              hazırladığı bu yemeklerle çocuklar için unutulmaz bir ziyafet
+              sunuyoruz. Desteklerinizle sofralar kuruluyor, kalpler ısınıyor.
+                            </div>
+                        </div>
+                        <div>
+                            <button class="expand-btn" onclick="toggleVideo(this)">
+                                Videoyu
+              İzle
+                            </button>
+                            <div class="video-container">
+                                <iframe
+                                    width="560"
+                                    height="315"
+                                    src="https://www.youtube.com/embed/Lw5LyhLYKeo?si=iRCkj_Qm5f8RGKWv"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-category="food">
+                        <div>
+                            <img src="images/projects/BREAD.JPG" alt="ekmek-fırınları">
+                            <div class="card-title">Taze Ekmek Dağıtımı</div>
+                            <div class="card-description">
+                                Suriye’nin farklı bölgelerinde kurduğumuz fırınlarda her gün
+              binlerce taze ekmek pişiriliyor ve ihtiyaç sahiplerine
+              ulaştırılıyor.
+                            </div>
+                        </div>
+                        <div>
+                            <button class="expand-btn" onclick="toggleVideo(this)">
+                                Videoyu
+              İzle
+                            </button>
+                            <div class="video-container">
+                                <iframe
+                                    width="560"
+                                    height="315"
+                                    src="https://www.youtube.com/embed/7ftxGLyfplY?si=zHNFsWREt0iJFiye"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-category="food">
+                        <div>
+                            <img src="images/projects/QURBANI.JPG" alt="kurban-eti-dagitimi">
+                            <div class="card-title">Kurban'da Et Dağıtımı</div>
+                            <div class="card-description">
+                                Kurban Bayramı'nda Suriye'nin yoksul bölgelerinde et dağıtımları
+              yapıyoruz.
+                            </div>
+                        </div>
+                        <div>
+                            <button class="expand-btn" onclick="toggleVideo(this)">
+                                Videoyu
+              İzle
+                            </button>
+                            <div class="video-container"></div>
+                        </div>
+                    </div>                   
+                    <div class="card" data-category="health">
+                        <div>
+                            <img src="images/projects/HK.JPG" alt="hijyen_paketleri">
+                            <div class="card-title">Hijyen Paketi Yardımı</div>
+                            <div class="card-description">
+                                Temizlik lüks değil, temel bir ihtiyaçtır.
+              İçerisinde çeşitli temizlik ve kişisel bakım ürünleri bulunan
+              hijyen kitlerimizi özenle hazırlayarak ihtiyaç sahiplerine
+              ulaştırıyoruz. Sağlıklı bir yaşamın ilk adımı hijyenle başlar.
+                            </div>
+                        </div>
+                        <div>
+                            <button class="expand-btn" onclick="toggleVideo(this)">
+                                Videoyu
+            İzle
+                            </button>
+                            <div class="video-container">
+                                <iframe
+                                    width="560"
+                                    height="315"
+                                    src="https://www.youtube.com/embed/ejIcoeeLFMk?si=KbAy9JTo5qxOtjYt"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-category="health">
+                        <div>
+                            <img src="images/projects/HOSPITAL.jpg" alt="tibbi-ekipman">
+                            <div class="card-title">Hastanelere Tibbi Ekipman Destegi</div>
+                            <div class="card-description">
+                                Hastanelere destek
+                            </div>
+                        </div>
+                        <div>
+                            <button class="expand-btn" onclick="toggleVideo(this)">
+                                Videoyu
+              İzle
+                            </button>
+                            <div class="video-container">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/hRgBnf-nt_0?si=9Ehi-Fuii1_wwQKE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p class="footer-brand">
+            &copy; 2026 Küresel Kalkınma ve İnsani
+      Yardım Derneği
+        </p>
+        <p>
+            <a target="_blank" href="https://www.instagram.com/ummahwelfaretrust/">Instagram</a>
+            |
+            <a target="_blank" href="https://www.youtube.com/@KKIYD">YouTube</a>
+            |
+            <a target="_blank" href="https://www.facebook.com/Ummahwelfaretrust/">Facebook</a>
+        </p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+    const toggleButton = document.querySelector(".menu-toggle");
+    const navContainer = document.querySelector(".nav-container");
+
+    toggleButton.addEventListener("click", () => {
+      navContainer.classList.toggle("active");
+    });
+    </script>
+</body>
+</html>

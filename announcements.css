@@ -1,0 +1,205 @@
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+        url(images/woodenbg.jpg);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homepage-button {
+    position: fixed;
+    left: 5px;
+    top: 45%;
+    background-color: rgba(119, 117, 117, 0.692);
+    padding: 15px 20px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 25px;
+    border: 3px solid rgb(228, 226, 226);
+}
+
+.homepage-button:hover {
+    border: 1px solid rgba(255, 255, 255, 0.432);
+    box-shadow: 1px 1px 3px rgb(168, 168, 168);
+
+}
+
+#sidebar {
+    position: fixed;
+    top: 165px;
+    right: 250px;
+    background-color: rgba(255, 255, 255, 0.507);
+    padding: 15px;
+    border-radius: 8px;
+    max-height: 80vh;
+    overflow-y: auto;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    z-index: 1000;
+    text-align: center;
+}
+
+#sidebar strong {
+    display: block;
+    margin-top: 0px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#sidebar em {
+    display: none;
+    margin: 5px 0 5px 10px;
+    font-style: normal;
+    color: #333;
+    cursor: pointer;
+}
+
+#sidebar em.active {
+    display: block;
+}
+
+#sidebar a {
+    color: #004080;
+    text-decoration: none;
+    margin-left: 20px;
+    display: none;
+}
+
+#sidebar a.active {
+    display: block;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    row-gap: 250px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+.paper {
+    width: 630px;
+    height: 891px;
+    background-color: white;
+    box-shadow: 20px 20px 3px rgba(0, 0, 0, 0.3);
+}
+
+img {
+    width: 100%;
+}
+
+.page-title {
+    color: rgb(255, 0, 0);
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-size: 45px;
+    margin-top: 50px;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+    background-color: rgba(82, 80, 80, 0.404);
+    text-align: center;
+    padding: 5px 50px;
+    border-radius: 50px;
+    font-weight: 650;
+}
+
+.logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 150px;
+}
+
+footer {
+    background: rgba(17, 34, 51, 0.5);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Montserrat';
+    width: 100%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-brand {
+    transition: text-shadow 1s ease;
+}
+
+.footer-brand:hover {
+    text-shadow: 0px 0px 5px white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .homepage-button {
+        top: 0;
+        right: 0;
+        left: 100px;
+        text-align: center;
+    }
+
+    #sidebar {
+        top: 176px;
+        right: 0px;
+        background-color: white;
+    }
+
+    .logo {
+        width: 60px;
+    }
+}
+
+/* testing tuff */
+
+#sidebar {
+    width: 250px;
+    transition: all 0.5s ease;
+    overflow: hidden;
+    background: #eee;
+    position: fixed;
+    right: 0;
+    top: 250px;
+    padding: 1rem;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    white-space: nowrap;
+}
+
+#sidebar.collapsed {
+    width: 52px;
+    padding: 0;
+}
+
+.toggle-btn {
+    position: absolute;
+    top: 2px;
+    right: 1px;
+    width: 50px;
+    background-color: #000000d7;
+    border: none;
+    padding: 5px 8px;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    font-size: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px black;
+    color: white;
+}
+
+#sidebar.collapsed .sidebar-title {
+    display: none;
+}
+
+@media (max-width:768px) {
+    #sidebar.collapsed {
+        width: 52px;
+        padding: 0;
+        height: 42px;
+    }
+
+}

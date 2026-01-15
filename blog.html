@@ -1,0 +1,72 @@
+<!-- blog.html -->
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog | Haberler ve Güncellemeler</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500;700&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="blog.css">
+        <link rel="stylesheet" href="general.css">
+    </head>
+    <body>
+        <header>
+            <h1>Güncellemeler & Haberler</h1>
+            <p>Sahadan son gelişmeleri takip edin</p>
+            <div class="blog-nav">
+                <ul class="blog-nav-links">
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="about.html">Hakkimizda</a></li>
+                    <li><a href="announcements.html">Duyurular</a></li>
+                    <li><a href="ourpartners.html">Ortaklarimiz</a></li>
+                    <li><a href="projects.html">Projelerimiz</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Bize Ulasin</a></li>
+                </ul>
+
+            </div>
+            <button class="menu-toggle" aria-label="Menüyü Aç/Kapat">
+                ☰
+            </button>
+        </header>
+        <main class="container">
+            <section class="hero-grid">
+                <div class="hero-article" id="hero-post">
+                    <!-- Will be filled by JS -->
+                </div>
+            </section>
+            <section class="blog-grid" id="blog-posts">
+                <!-- Rest of the blog posts will go here -->
+            </section>
+        </main>
+        <footer>
+            <p class="footer-brand">&copy; 2026 Küresel Kalkınma ve İnsani
+                Yardım Derneği</p>
+            <p><a target="_blank"
+                    href="https://www.instagram.com/ummahwelfaretrust/">Instagram</a>
+                | <a target="_blank"
+                    href="https://www.youtube.com/@KKIYD">YouTube</a> | <a
+                    target="_blank"
+                    href="https://www.facebook.com/Ummahwelfaretrust/">Facebook</a>
+            </p>
+        </footer>
+        <script src="blogData.js"></script>
+        <script src="blogworks.js" defer></script>
+        <script>
+        const toggleButton = document.querySelector(".menu-toggle");
+        const navContainer = document.querySelector(".blog-nav");
+
+        toggleButton.addEventListener("click", () => {
+         navContainer.classList.toggle("active");
+         });
+        </script>
+    </body>
+</html>

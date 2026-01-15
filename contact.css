@@ -1,0 +1,278 @@
+:root {
+  --primary-color: #fdfdff;
+  --secondary-color: #68aefd;
+  --accent-color: #e94560;
+  --background-color: #f6f6f6;
+  --font-color: #fff;
+  --secondary-font-color: #555;
+  --border-radius: 8px;
+  --box-shadow: 0px 4px 6px rgba(0 0 0 0.1);
+  --transtion: all 0.3s ease;
+  --oldtopbarcolor: rgb(20, 80, 121);
+}
+
+.contact-header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.contact-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+}
+
+.contact-header-message {
+  font-family: Montserrat;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1500px;
+}
+
+.contact-info,
+.contact-form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.contact-info-image {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid rgb(0, 0, 0);
+  box-shadow: 0 0 5px rgb(0, 162, 255);
+  border-radius: 8px;
+}
+
+.contact-info h2,
+.contact-form h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #ff2002;
+}
+
+.contact-info-title,
+.contact-form-title {
+  text-align: center;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 22px;
+  background-color: black;
+  color: white;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #116a7b;
+  outline: none;
+}
+
+.contact-form button {
+  background-color: #008cff;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: var(--transtion)
+}
+
+.contact-form button:hover {
+  background-color: #0d5a69;
+}
+
+.contact-extra {
+  text-align: center;
+  padding: 1rem 2rem 3rem;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+
+  .contact-header {
+    padding: 1.5rem 1rem;
+  }
+
+  .contact-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .contact-info,
+  .contact-form {
+    padding: 1.5rem 1rem;
+  }
+
+  .contact-info-title,
+  .contact-form-title {
+    font-size: 1.2rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.95rem;
+    padding: 0.65rem;
+  }
+
+  .contact-form button {
+    width: 100%;
+  }
+
+  .contact-extra {
+    padding: 2rem 1rem;
+  }
+}
+
+.asphalt {
+  background: linear-gradient(to right, #a8a8a8, rgb(117, 117, 117), rgb(160, 160, 160), rgb(75, 75, 75), rgb(182, 182, 182));
+  animation: move 1s infinite;
+  width: 100%;
+  height: 100px;
+  background-size: 500% 500%;
+  box-shadow: 0 0 3px black;
+}
+
+.road {
+  width: 100%;
+  position: relative;
+}
+
+.lines {
+  background: linear-gradient(to right, #ffffff, rgb(117, 117, 117), rgb(255, 255, 255), rgb(75, 75, 75), rgb(255, 255, 255));
+  animation: move 0.5s infinite;
+  width: 100%;
+  height: 10px;
+  background-size: 500% 500%;
+  box-shadow: 0 0 1px white;
+}
+
+.truck {
+  position: absolute;
+  top: 140px;
+  height: 40px;
+  width: 100px;
+  background-color: red;
+  left: 47%;
+  border-radius: 15px;
+}
+
+.car-actually {
+  position: inherit;
+  height: 22px;
+  width: 40px;
+  background-color: black;
+  top: 8px;
+  left: 30px;
+}
+
+.exhaust {
+  position: inherit;
+  width: 6px;
+  height: 3px;
+  background-color: black;
+  top: 10px;
+  left: -7px;
+}
+
+.headlight1 {
+  position: absolute;
+  height: 7.5px;
+  aspect-ratio: 1 / 1;
+  background-color: rgba(255, 255, 183, 0.3);
+  border-radius: 50%;
+  right: -4px;
+  top: 2px;
+  box-shadow: 5px 0px 10px rgb(255, 255, 255);
+}
+
+
+.headlight2 {
+  position: absolute;
+  height: 7.5px;
+  aspect-ratio: 1 / 1;
+  background-color: rgba(255, 255, 183, 0.3);
+  border-radius: 50%;
+  right: -4px;
+  top: 30px;
+  box-shadow: 5px 0px 10px rgb(255, 255, 255);
+}
+
+@keyframes move {
+  0% {
+    background-position: 0% 25%;
+  }
+
+  25% {
+    background-position: 25% 50%;
+  }
+
+  50% {
+    background-position: 50% 75%;
+  }
+
+  75% {
+    background-position: 75% 100%;
+  }
+
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+
+.smoke {
+  width: 120px;
+  position: absolute;
+  z-index: 1000;
+  left: -77px;
+  top: -27px;
+  animation: opacity 0.1s infinite;
+
+}
+
+.vw {
+  transform: rotate(180deg);
+  position: absolute;
+  width: 135px;
+  top: -37px;
+  left: -20px;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 50%;
+    transform: rotate(10deg);
+  }
+
+  100% {
+    opacity: 0%;
+    transform: scaleY(-1);
+  }
+}

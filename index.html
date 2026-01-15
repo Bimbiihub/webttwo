@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="general.css">
+        <title>KKIYD | Küresel Kalkınma ve İnsani Yardım Derneği </title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="topbar">
+                <img class="waicon" src="images/apple.png"> <p
+                    class="phone-number">+90 (554)-115-4115</p>
+                <img class="tblogo" src="images/transpglb5.png">
+                <img class="mailicon" src="images/mail.png"> <p
+                    class="e-mail-address">info@kkiyd.org</p>
+            </div>
+            <div class="header-mid-section">
+                <p class="header-mid-section-kkiyd">Küresel Kalkınma ve İnsani
+                    Yardım Derneği</p>
+                <p class="header-mid-section-uwt">Ümmet Yardım Vakfı (İngiltere)
+                    İle Ortaklaşa... </p>
+            </div>
+            <nav class="navbar">
+                <a href="index.html"><img src="images/kkiyd-logo.png" alt="Logo"
+                        class="kkiyd-logo"></a>
+                <div class="nav-container">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Anasayfa</a></li>
+                        <li><a href="about.html">Hakkimizda</a></li>
+                        <li><a href="announcements.html">Duyurular</a></li>
+                        <li><a href="ourpartners.html">Ortaklarimiz</a></li>
+                        <li><a href="projects.html">Projelerimiz</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Bize Ulasin</a></li>
+                    </ul>
+                </div>
+                <a href="https://uwt.org"><img
+                        src="images/uwt logo narrower.png" alt="Logo"
+                        class="uwt-logo"></a>
+                <button class="menu-toggle" aria-label="Menüyü Aç/Kapat">
+                    ☰
+                </button>
+            </nav>
+        </header>
+        <div class="stats">
+            <div class="counter-other">
+                <div class="stat" data-count="50000">18000 <i
+                        class="fa fa-check-square" aria-hidden="true"></i>
+                </div>
+                <div class="stat-label">Yetim</div>
+            </div>
+            <div class="counter-other">
+                <div class="stat" data-count="20000">8000 <i
+                        class="fa fa-check-square" aria-hidden="true"></i>
+                </div>
+                <div class="stat-label">Zor Durumdaki Aile</div>
+            </div>
+            <div class="divider">
+                <p
+                    class="hero-title"><u>Birlikte</u> Daha Güzel
+                    Yarınlara...</p>
+                <!-- <div class="hero-buttons">
+                    <button
+                        onclick="window.location.href='projects.html'">Suriye Su
+                        Projelerimizi Gör</button>
+                    <button class="b2"
+                        onclick="window.location.href='contact.html'">Gönüllü
+                        Ol</button>
+                </div> -->
+            </div>
+
+            <div class="counter-other">
+                <div class="stat" data-count="300000">10 <i
+                        class="fa fa-check-square" aria-hidden="true"></i>
+                </div>
+                <div class="stat-label">Eksiği Bulunan Hastane</div>
+            </div>
+            <div class="counter-other">
+                <div class="stat" data-count="15000">12 <i
+                        class="fa fa-check-square" aria-hidden="true"></i>
+                </div>
+                <div class="stat-label">Hasar Gören Cami</div>
+            </div>
+        </div>
+
+        <div class="warp-container">
+            <canvas id="warpCanvas"></canvas>
+            <!--
+            1.Yetim
+            2.Zor Durumda Çocuklu Aile
+            3.Ekipmani Eksik Hastane
+            4.Hasar Goren Cami
+
+
+
+
+
+            -->
+
+            <div class="counter-wrapper">
+                <div class="each-counter">
+                    <div class="counter0" id="counter1">0</div>
+                    <div class="speed-label">FAYDALANAN BİREY</div>
+                </div>
+                <div class="each-counter">
+                    <div class="counter0" id="counter2">0</div>
+                    <div class="speed-label">AYNİ YARDIM</div>
+                </div>
+                <div class="each-counter">
+                    <div class="counter0" id="counter3">0</div>
+                    <div class="speed-label">FARKLI PROJE</div>
+                </div>
+
+            </div>
+
+            <div class="controls">
+                <button id="startBtn">SAYILARI GETİR</button>
+                <button id="resetBtn">SIFIRLA</button>
+            </div>
+        </div>
+
+        <section class="content-hero">
+            <div class="hero-text">
+                <h2>Türkiye ve Suriye'de Yardım Seferberliği, Sıradaki Durak:
+                    Filistin</h2>
+                <p class="hero-description">Türkiye ve Suriye'de ihtiyacı olan
+                    herkesin yanında, çözümün bir parçası olmak için
+                    çalışıyoruz. Amacımız sadece yardım etmek değil; insanları
+                    güçlendirmek, yalnız bırakmamak ve birlikte ayağa kaldırmak.
+                </p>
+                <a href="projects.html" class="btn">Tum Projelerimize Göz
+                    Atın</a>
+            </div>
+            <div class="info-panel"></div>
+        </section>
+
+        <div class="video-and-blog">
+            <section class="video-section">
+                <p class="video-section-title">Son Eklenen Video</p>
+                <iframe class="youtube" width="560" height="315"
+                    src="https://www.youtube.com/embed/ejIcoeeLFMk?si=7glI37h0EzvWRyME"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
+            </section>
+            <section class="latest-blog-preview">
+                <p class="hp-blog-title">Son Haberler</h2>
+                <div id="blog-preview-container"
+                    class="blog-preview-grid">
+                </div>
+                <a href="blog.html" class="see-more">Tümünü Gör</a>
+            </section>
+        </div>
+        <div class="gallery-title">
+            Galeri
+        </div>
+        <section class="image-gallery">
+            <div class="album-selector">
+                <button class="album-button" data-album="all">Tümü</button>
+                <button class="album-button"
+                    data-album="suriye">Suriye'den</button>
+                <button class="album-button"
+                    data-album="proje">Projeler</button>
+                <button class="album-button" data-album="madrasa">Kur'an
+                    Kurslarımız</button>
+                <button class="album-button" data-album="other">Diğer</button>
+            </div>
+
+            <div class="albums">
+                <div class="album" data-album="suriye">
+                    <div class="container">
+                        <div class="card">
+                            <img
+                                src="images/imagegallery/Suriye/WhatsApp Image 2025-05-12 at 14.43.52_9a210249.jpg">
+                            <div class="description">05.2025 Suriye
+                                Ziyaretimizden
+                                Kareler</div>
+                        </div>
+                        <div class="card">
+                            <img
+                                src="images/imagegallery/Suriye/WhatsApp Image 2025-05-12 at 15.14.23_7220257e.jpg">
+                            <div class="description">Son Suriye Ziyaretimizden
+                                Kareler</div>
+                        </div>
+                        <div class="card">
+                            <img
+                                src="images/imagegallery/Suriye/WhatsApp Image 2025-05-12 at 15.15.22_0fd2552e.jpg">
+                            <div class="description">Son Suriye Ziyaretimizden
+                                Kareler</div>
+                        </div>
+                        <div class="card">
+                            <img
+                                src="images/imagegallery/Suriye/WhatsApp Image 2025-05-12 at 15.17.44_5e05942c.jpg">
+                            <div class="description">Son Suriye Ziyaretimizden
+                                Kareler</div>
+                        </div>
+                        <div class="card">
+                            <img
+                                src="images/imagegallery/Suriye/WhatsApp Image 2025-05-12 at 15.17.45_cbc2f807.jpg">
+                            <div class="description">Son Suriye Ziyaretimizden
+                                Kareler</div>
+                        </div>
+                        <div class="card">
+                            <img
+                                src="images/imagegallery/Suriye/WhatsApp Image 2025-05-12 at 15.17.46_98050d81.jpg">
+                            <div class="description">Son Suriye Ziyaretimizden
+                                Kareler</div>
+                        </div>
+                        <div class="card">
+                            <img
+                                src="images/imagegallery/Suriye/WhatsApp Image 2025-05-12 at 15.17.46_e4df140b.jpg">
+                            <div class="description">Son Suriye Ziyaretimizden
+                                Kareler</div>
+                        </div>
+                        <div class="card">
+                            <img
+                                src="images/imagegallery/Suriye/WhatsApp Image 2025-05-12 at 15.17.47_05864ad7.jpg">
+                            <div class="description">Son Suriye Ziyaretimizden
+                                Kareler</div>
+                        </div>
+                        <div class="card">
+                            <img
+                                src="images/imagegallery/Suriye/WhatsApp Image 2025-05-12 at 15.17.47_59157cc4.jpg">
+                            <div class="description">Son Suriye Ziyaretimizden
+                                Kareler</div>
+                        </div>
+                        <div class="card">
+                            <img
+                                src="images/imagegallery/Suriye/WhatsApp Image 2025-05-12 at 15.17.50_27c6499f.jpg">
+                            <div class="description">Son Suriye Ziyaretimizden
+                                Kareler</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="album" data-album="proje">
+                    <div class="container">
+                        <div class="card">
+                            <img
+                                src="images/imagegallery/Projeler/2025-02-05 at 12.13.04_715f4a9d.jpg">
+                            <div class="description">Projelerimiz</div>
+                        </div>
+                        <div class="card">
+                            <img
+                                src="images/imagegallery/Projeler/IMG-20250512-WA0027.jpg">
+                            <div class="description">Türkiye'de Deprem
+                                Mağdurlarına Nakit Desteği</div>
+                        </div>
+                        <div class="card">
+                            <img
+                                src="images/imagegallery/Projeler/IMG_1120.JPG">
+                            <div class="description">Gıda Kolisi Yardımı</div>
+                        </div>
+                        <div class="card">
+                            <img
+                                src="images/imagegallery/Projeler/IMG_1449.JPG">
+                            <div class="description">Gıda Kolilerinin Paketlenme
+                                Aşaması</div>
+                        </div>
+                        <div class="card">
+                            <img
+                                src="images/imagegallery/Projeler/IMG_3796.JPG">
+                            <div class="description"></div>
+                        </div>
+                        <div class="card">
+                            <img
+                                src="images/imagegallery/Projeler/IMG_3824.JPG">
+                            <div class="description"></div>
+                        </div>
+                        <div class="card">
+                            <img
+                                src="images/imagegallery/Projeler/IMG_5550.JPG">
+                            <div class="description"></div>
+                        </div>
+                        <div class="card">
+                            <img
+                                src="images/imagegallery/Projeler/IMG_8439.JPG">
+                            <div class="description">Adak Kurbanlık</div>
+                        </div>
+                        <div class="card">
+                            <img
+                                src="images/imagegallery/Projeler/IMG_8576.JPG">
+                            <div class="description">Muhtaç Çocuklarımıza Yemek
+                                Hazırlığı</div>
+                        </div>
+                        <div class="card">
+                            <img
+                                src="images/imagegallery/Projeler/IMG_8581.JPG">
+                            <div class="description"></div>
+                        </div>
+                        <div class="card">
+                            <img
+                                src="images/imagegallery/Projeler/IMG_8638.JPG">
+                            <div class="description"></div>
+                        </div>
+                        <div class="card">
+                            <img
+                                src="images/imagegallery/Projeler/IMG_8677.JPG">
+                            <div class="description"></div>
+                        </div>
+                        <div class="card">
+                            <img
+                                src="images/imagegallery/Projeler/WhatsApp Image 2025-02-11 at 17.18.32_cfc45e7d.jpg">
+                            <div class="description"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="album" data-album="madrasa">
+                    <div class="container">
+                        <div class="card">
+                            <img
+                                src="images/imagegallery/Kur'an Kursları/5771769282672313693.jpg">
+                            <div class="description"></div>
+                        </div>
+                        <div class="card">
+                            <img
+                                src="images/imagegallery/Kur'an Kursları/5794184304673277784.jpg">
+                            <div class="description"></div>
+                        </div>
+                        <div class="card">
+                            <img
+                                src="images/imagegallery/Kur'an Kursları/5843954063576778561.jpg">
+                            <div class="description"></div>
+                        </div>
+                        <div class="card">
+                            <img
+                                src="images/imagegallery/Kur'an Kursları/5843954063576778567.jpg">
+                            <div class="description"></div>
+                        </div>
+                        <div class="card">
+                            <img
+                                src="images/imagegallery/Kur'an Kursları/6042070545480140114.jpg">
+                            <div class="description"></div>
+                        </div>
+                        <div class="card">
+                            <img
+                                src="images/imagegallery/Kur'an Kursları/good.jpg">
+                            <div class="description"></div>
+                        </div>
+                        <div class="card">
+                            <img
+                                src="images/imagegallery/Kur'an Kursları/good3.jpg">
+                            <div class="description">Kur'an Kursu Molasında
+                                Eğlenen Çocuklar</div>
+                        </div>
+                        <div class="card">
+                            <img
+                                src="images/imagegallery/Kur'an Kursları/good4.jpg">
+                            <div class="description"></div>
+                        </div>
+                        <div class="card">
+                            <img
+                                src="images/imagegallery/Kur'an Kursları/good5.jpg">
+                            <div class="description"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="album" data-album="other">
+                    <div class="container">
+                        <div class="card">
+                            <img
+                                src="images/imagegallery/Diger/Screenshot 2025-02-24 172832.png">
+                            <div class="description"> Hadis</div>
+                        </div>
+                        <div class="card">
+                            <img
+                                src="images/imagegallery/Diger/4574959-1372571369.jpg">
+                            <div class="description">Özgür Suriye</div>
+                        </div>
+                        <div class="card">
+                            <img
+                                src="images/imagegallery/Diger/eesdfsd.jpg">
+                            <div class="description">Projelerimiz</div>
+                        </div>
+                        <div class="card">
+                            <img
+                                src="images/imagegallery/Diger/IMG-20250506-WA0001.jpg">
+                            <div class="description"></div>
+                        </div>
+                        <div class="card">
+                            <img
+                                src="images/imagegallery/Diger/IMG-20250512-WA0048.jpg">
+                            <div class="description"></div>
+                        </div>
+                        <div class="card">
+                            <img
+                                src="images/imagegallery/Diger/IMG-20250512-WA0051.jpg">
+                            <div class="description"></div>
+                        </div>
+                        <div class="card">
+                            <img
+                                src="images/imagegallery/Diger/IMG_5894.JPG">
+                            <div class="description">Yardım Makbuzu ve
+                                Kaşe</div>
+                        </div>
+                        <div class="card">
+                            <img
+                                src="images/imagegallery/Diger/photo_2_2025-06-06_10-14-28.jpg">
+                            <div class="description">Halid Bin Velid Camii</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="modal" id="modal">
+            <span class="close-btn" id="closeModal">&times;</span>
+            <img id="modalImg" src alt>
+        </div>
+
+        <footer>
+            <p class="footer-brand">&copy; 2026 Küresel Kalkınma ve İnsani
+                Yardım Derneği</p>
+
+            <p><a target="_blank"
+                    href="https://www.instagram.com/ummahwelfaretrust/">Instagram</a>
+                | <a target="_blank"
+                    href="https://www.youtube.com/@KKIYD">YouTube</a> | <a
+                    target="_blank"
+                    href="https://www.facebook.com/Ummahwelfaretrust/">Facebook</a>
+
+            </p>
+        </footer>
+        <script src="script.js"></script>
+        <script src="blogData.js"></script>
+        <script>
+        const previewContainer = document.getElementById("blog-preview-container");
+
+        blogPosts.slice(0, 3).forEach((post, index) => {
+  const card = document.createElement("div");
+  card.classList.add("preview-card");
+  
+  const titleContent = index === 0 
+    ? `<i class="fa-solid fa-thumbtack"></i> ${post.title} <i class="fa-solid fa-thumbtack"></i>`
+    : post.title;
+  
+  card.innerHTML = `
+    <div class="card-content">
+      <h3>${titleContent}</h3>
+      <p>${post.content}</p>
+      <span class="date">${post.date}</span>
+    </div>
+  `;
+
+  card.onclick = () => {
+    window.location.href = post.url;
+  };
+  
+  previewContainer.appendChild(card);
+});
+
+        //  blogPosts.slice(0, 1).forEach(post => {
+        //  const card = document.createElement("div");
+        // card.classList.add("preview-card");
+        // card.innerHTML = `
+        // <div class="card-content">
+        // <h3><i class="fa-solid fa-thumbtack"></i> ${post.title} <i class="fa-solid fa-thumbtack"></i></h3>
+        // <p>${post.content}</p>
+        // <span class="date">${post.date}</span>
+        // </div>
+        // `;
+
+        // card.onclick = () => {
+        // window.location.href = post.url;
+        // };
+        // previewContainer.appendChild(card);
+        // });
+        
+        // blogPosts.slice(1, 3).forEach(post => {
+        //  const card = document.createElement("div");
+        // card.classList.add("preview-card");
+        // card.innerHTML = `
+        // <div class="card-content">
+        // <h3>${post.title}</h3>
+        // <p>${post.content}</p>
+        // <span class="date">${post.date}</span>
+        // </div>
+        // `;
+
+        // card.onclick = () => {
+        // window.location.href = post.url;
+        // };
+        // previewContainer.appendChild(card);
+        // });
+
+        
+        </script>
+        <script>
+        const toggleButton = document.querySelector(".menu-toggle");
+        const navContainer = document.querySelector(".nav-container");
+
+        toggleButton.addEventListener("click", () => {
+         navContainer.classList.toggle("active");
+         });
+
+         // zoom
+
+        //   const img = document.querySelector(".content-hero");
+const hero = document.querySelector(".content-hero");
+const text = document.querySelector(".text");
+const infoPanel = document.querySelector(".info-panel");
+
+const views = [
+{
+    bg: ["0%", "0%", "100%", "100%"],
+    title: "",
+    info: ""
+},
+
+ {
+  bg: ["0%", "0%", "250%", "250%"],
+  title: "Gıda Sepeti",
+  info: `Proje: Gıda Sepeti. Yaklaşık 50.000 ihtiyaç sahibine düzenli gıda desteği sağlandı. 
+
+  Faaliyet Bölgesi: Suriye, Türkiye`
+},
+{
+  bg: ["50%", "0%", "200%", "200%"],
+  title: "Bebek Sütü",
+  info: `Proje: Bebek Sütü Desteği. Yaklaşık 30.000 bebek ve küçük çocuğun temel beslenme ihtiyacı karşılandı. 
+
+  Faaliyet Bölgesi: Suriye, Türkiye`
+},
+{
+  bg: ["105%", "0%", "250%", "250%"],
+  title: "Pişmiş Yemek",
+  info: `Proje: Pişmiş Yemek Dağıtımı. Günlük sıcak yemek dağıtımıyla yaklaşık 12.000 kişiye ulaşıldı. Özellikle yerinden edilmiş aileler ve çocuklar hedeflendi.  
+
+  Faaliyet Bölgesi: Suriye, Türkiye`
+},
+{
+  bg: ["110%", "100%", "200%", "200%"],
+  title: "Ekmek Dağıtımı",
+  info: `Proje: Ekmek Dağıtımı. Günlük temel gıda ihtiyacını karşılamak amacıyla yaklaşık 20.000 kişiye düzenli ekmek desteği sağlandı. 
+
+  Faaliyet Bölgesi: Suriye`
+},
+{
+  bg: ["50%", "80%", "250%", "250%"],
+  title: "Depremzede Desteği",
+  info: `Proje: Depremzede Acil Destek. Depremden etkilenen yaklaşık 15.000 kişiye gıda, hijyen ve nakit desteği ulaştırıldı. 
+
+  Faaliyet Bölgesi: Suriye ve Türkiye`
+},
+{
+  bg: ["-15%", "100%", "200%", "200%"],
+  title: "",
+  info: "Gıda sepetlerinin dağıtım öncesi hazırlanma süreci. Depo çalışmalarında gönüllüler ve saha ekipleri koordineli şekilde görev aldı."
+}
+
+];
+
+let index = 0;
+let typeInterval = null;
+
+function showView(view) {
+  /* background pan */
+  hero.style.setProperty("--bg-x", view.bg[0]);
+  hero.style.setProperty("--bg-y", view.bg[1]);
+  hero.style.setProperty("--size-a", view.bg[2]);
+  hero.style.setProperty("--size-b", view.bg[3]);
+
+
+
+  /* info panel typing */
+  startTypewriter(view.info);
+}
+
+function startTypewriter(content, speed = 20) {
+  clearInterval(typeInterval);
+  infoPanel.textContent = "";
+
+  if (!content) return;
+
+  let i = 0;
+  typeInterval = setInterval(() => {
+    infoPanel.textContent += content[i];
+    i++;
+
+    if (i >= content.length) {
+      clearInterval(typeInterval);
+    }
+  }, speed);
+}
+
+/* main loop */
+// setInterval(() => {
+//   showView(views[index]);
+//   index = (index + 1) % views.length;
+// }, 4500);
+
+
+function loop() {
+  showView(views[index]);
+
+  // choose delay
+  const delay = index === 0 ? 2500 : 4500;
+
+  index = (index + 1) % views.length;
+
+  setTimeout(loop, delay);
+}
+
+loop();
+
+
+/* init immediately */
+showView(views[0]);
+
+        </script>
+        <script src="albumfilter.js"></script>
+        <script src="activebtn.js" defer></script>
+        <script src="modal.js"></script>
+        <script src="warp.js"></script>
+    </body>
+</html>

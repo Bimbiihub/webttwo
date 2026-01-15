@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Duyurular</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="announcements.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+  </head>
+  <body>
+    <div class="logo">
+      <img src="images/globe.png">
+    </div>
+    <div class="page-title">
+      DUYURULAR
+    </div>
+    <main id="main"></main>
+    <div id="sidebar">
+      <button id="toggleSidebar" class="toggle-btn">⮜</button>
+      <p class="sidebar-title">Yıl ve Ay Seçimi</p>
+    </div>
+    <a class="homepage-button" href="index.html">Anasayfa</a>
+    <script src="sidebar.js"></script>
+    <footer>
+      <p class="footer-brand">&copy; 2026 Küresel Kalkınma ve İnsani
+        Yardım Derneği</p>
+      <p><a target="_blank"
+          href="https://www.instagram.com/ummahwelfaretrust/">Instagram</a>
+        | <a target="_blank"
+          href="https://www.youtube.com/@KKIYD">YouTube</a> | <a
+          target="_blank"
+          href="https://www.facebook.com/Ummahwelfaretrust/">Facebook</a>
+      </p>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+  const sidebar = document.getElementById("sidebar");
+  const toggleBtn = document.getElementById("toggleSidebar");
+
+  toggleBtn.addEventListener("click", () => {
+    sidebar.classList.toggle("collapsed");
+    toggleBtn.textContent = sidebar.classList.contains("collapsed") ? "⮞" : "⮜";
+  });
+});
+    </script>
+  </body>
+</html>

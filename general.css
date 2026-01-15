@@ -1,0 +1,271 @@
+:root {
+  --primary-color: #fdfdff;
+  --secondary-color: #68aefd;
+  --accent-color: #e94560;
+  --background-color: #f6f6f6;
+  --font-color: #fff;
+  --secondary-font-color: #555;
+  --border-radius: 8px;
+  --box-shadow: 0px 4px 6px rgba(0 0 0 0.1);
+  --transtion: all 0.3s ease;
+  --oldtopbarcolor: rgb(20, 80, 121);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins';
+  background-color: white;
+}
+
+.nav-links {
+  background: linear-gradient(-45deg, #65cdfa, #2f9ef8, #00aeff, #008ada);
+  animation: gradientFlow 8s ease infinite;
+  background-size: 400% 400%;
+  list-style: none;
+  display: flex;
+  padding: 15px 10px;
+  border-radius: 15px;
+  justify-content: space-evenly;
+  font-size: 18px;
+  width: 100%;
+}
+
+
+/* Animation keyframes */
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.header-mid-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-mid-section-kkiyd {
+  font-size: 40px;
+  font-family: 'Poppins';
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+}
+
+.header-mid-section-uwt {
+  font-family: 'Poppins';
+  font-size: 25px;
+  margin: 0;
+  font-style: italic;
+}
+
+.kkiyd-logo,
+.uwt-logo {
+  width: 300px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.2s ease-out;
+  padding: 7px 15px;
+  border-radius: var(--border-radius);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul li a:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  box-shadow: 0 0 3px white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+
+.topbar {
+  background-color: var(--oldtopbarcolor);
+  height: 50px;
+  color: white;
+  width: 100%;
+  margin-bottom: 20px;
+  box-shadow: 0px 5px 5px rgb(12, 51, 63);
+  display: flex;
+  align-items: center;
+  position: relative;
+
+}
+
+.waicon {
+  height: 21px;
+  padding-left: 54px;
+  padding-right: 5px;
+}
+
+.mailicon {
+  height: 21px;
+  padding-left: 50px;
+  padding-right: 5px;
+}
+
+.tblogo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 50px;
+}
+
+/* sketch */
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: rgb(0, 153, 255);
+  margin-right: 20px;
+}
+
+.nav-container {
+  width: 100%;
+  margin-right: 25px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 50px;
+  }
+
+  .nav-container {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    background: #2f9ef8;
+    border-radius: 15px;
+    margin-top: 10px;
+  }
+
+  .nav-container.active {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .nav-links li {
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .kkiyd-logo,
+  .uwt-logo {
+    width: 180px;
+  }
+
+  .waicon,
+  .mailicon {
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 5px;
+  }
+
+  .tblogo {
+    position: static;
+    transform: none;
+    height: 35px;
+  }
+
+  .topbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+  }
+
+  .uwt-logo {
+    order: 3;
+    /* Make sure it comes last */
+    align-self: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-container.active {
+    width: 100%;
+  }
+
+  .menu-toggle {
+    align-self: flex-end;
+  }
+
+  .header-mid-section-kkiyd {
+    font-size: 30px;
+    font-family: 'Poppins';
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    text-align: center;
+  }
+
+  .header-mid-section-uwt {
+    font-family: 'Poppins';
+    font-size: 20px;
+    margin: 0;
+    font-style: italic;
+  }
+}
+
+footer {
+  background: #123;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-family: 'Montserrat';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-brand {
+  transition: text-shadow 1s ease;
+  width: fit-content;
+}
+
+.footer-brand:hover {
+  text-shadow: 0px 0px 5px white;
+  cursor: pointer;
+}
